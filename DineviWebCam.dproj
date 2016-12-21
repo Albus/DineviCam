@@ -88,12 +88,14 @@
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <UWP_DelphiLogo150>A:\Downloads\webcam-icon.png</UWP_DelphiLogo150>
+        <UWP_DelphiLogo44>A:\Downloads\webcam-icon.png</UWP_DelphiLogo44>
+        <Icon_MainIcon>DineviWebCam_Icon.ico</Icon_MainIcon>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_RangeChecking>true</DCC_RangeChecking>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_IntegerOverflowCheck>true</DCC_IntegerOverflowCheck>
         <DCC_Warnings>false</DCC_Warnings>
-        <Manifest_File>(None)</Manifest_File>
         <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
         <DCC_PentiumSafeDivide>true</DCC_PentiumSafeDivide>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
@@ -135,6 +137,13 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="A:\Downloads\webcam-icon.png" Configuration="Release" Class="UWP_DelphiLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets\</RemoteDir>
+                        <RemoteName>Logo44x44.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\DineviWebCam.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>DineviWebCam.exe</RemoteName>
